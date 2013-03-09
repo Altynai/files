@@ -1,0 +1,185 @@
+﻿\documentclass[9pt]{article}
+\usepackage{ctex}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+% \usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+\newcommand\nth{\textsuperscript{th}} %\th is taken already
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{JiaPeng Chen}{Altynai.me@gmail.com}{15068821836}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+\begin{body}
+	\vspace{14pt}
+	\textbf{Software Engineering} \hfill \emph{September 2009 - Present} \\
+	\emph{Zhe Jiang University Of Technology}\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Experience}
+
+\begin{body}
+	\vspace{14pt}
+
+    \textbf {OnlineJudge Submitter} \emph{@school} \hfill \emph{Winter 2012}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item A python tool that can help you easily submit your code to an Online Judge like \emph{poj.org, acm.hdu.edu.cn, acm.zju.edu.cn,} etc. and get the judge result simultaneously.
+	\end{itemize}
+
+	\textbf{Java Intern Developer} \emph{@www.sodao.com} \hfill \emph{June - November 2012}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Design and implementation of a Web Spider for collecting and analysing national universities's data.
+        \item Analysis and optimize \emph{the IP management system}'s source code.
+        \item Read and analysis Cleo's source code(A LinkedIn's project) and improve it for the real-time auto-complete system.
+	\end{itemize}
+
+	\textbf {Bazinga Online Bookstore} \emph{@school} \hfill \emph{Spring 2011}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+        \item A JaveEE homework at the end of term that developed by SSH framework and HTML/CSS.
+		\item A Small B2C website for giving customers a way to search the books and buy them.
+	\end{itemize}
+
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} C++, Python, Java, SQL, \LaTeX \\
+	\medskip
+
+    \emph{\textbf{Algorithms:}}{} I've participated in program design competitions for three years such as \emph{ACM-ICPC,
+TopCoder, Codejam, Codeforces, etc}. So I master basic data structure and algorithm.\\
+	\medskip
+
+	\emph{\textbf{Operating Systems:}}{} Windows, Linux(Ubuntu, Fedora) \\
+    \medskip
+
+    \emph{\textbf{English:}}{} Basic reading, writing and translating, 449(CET$-$6).\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Awards and Honors}
+
+\begin{body}
+	\vspace{14pt}
+    %%% Item 1 %%%
+	\textbf{Bronze Medal}, the 36th ACM International Collegiate Programming Contest of Asian \hfill{} \emph{November 2011}\\
+	\smallskip
+
+	%%% Item 2 %%%
+	\textbf{Bronze Medal}, Google Cup 2011 ACM-ICPC National Program Design Contest \hfill{} \emph{April 2011}\\
+	\smallskip
+
+    %%% Item 3 %%%
+	\textbf{Silver Medal}, the 8\nth{} Zhejiang Provincial Programming Contest \hfill{} \emph{May 2011}\\
+	\smallskip
+
+    %%% Item 4 %%%
+	\textbf{Gold Medal}, the 9\nth{} Zhejiang Provincial Programming Contest \hfill{} \emph{April 2012}\\
+	\smallskip
+
+    %%% Item 5 %%%
+	\textbf{First Price}, the 10\nth{} Zhejiang University of Technology Program Design Contest \hfill{} \emph{April 2012}\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Around the Web
+\header{Around the Web}
+
+\begin{body}
+	\vspace{14pt}
+    \textbf{Website:} http://Altynai.me \\
+    \textbf{Github:} https://github.com/Altynai \\
+    \textbf{LinkedIn:} http://cn.linkedin.com/pub/jiapeng-chen/66/b23/849\\
+\end{body}
+
+\end{document}
